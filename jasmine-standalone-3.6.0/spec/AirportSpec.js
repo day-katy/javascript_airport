@@ -2,18 +2,17 @@
 
 describe("Airport", function() {
   var airport;
-  // var plane;
 
   beforeEach(function() {
     airport = new Airport();
-  })
+  });
 
   it ("should be an instance of Airport class", function() {
-    expect(airport).toBeInstanceOf (Airport)
-  }); 
+    expect(airport).toBeInstanceOf (Airport);
+  });
 
-  it ("should respond to landing function", function() {
-    expect(airport.land).not.toBeUndefined();
-  })
+  it ("should be empty by default", function() {
+    expect(airport.planes()).toEqual([]);
+  });
   
 });
