@@ -23,5 +23,4 @@ describe("Plane", function() {
     plane.takeoff();
     expect(airport.clearForTakeOff).toHaveBeenCalled();
   });
-
 });
